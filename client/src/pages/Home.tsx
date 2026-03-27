@@ -9,6 +9,7 @@ import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 import ProcessSection from "@/components/ProcessSection";
 import IndustriesSection from "@/components/IndustriesSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ResultsSection from "@/components/ResultsSection";
 import TeamSection from "@/components/TeamSection";
 import CTABanner from "@/components/CTABanner";
@@ -24,6 +25,7 @@ export default function Home() {
       <AboutSection />
       <ProcessSection />
       <IndustriesSection />
+      <CaseStudiesSection />
       <ResultsSection />
       <TeamSection />
       <CTABanner />
