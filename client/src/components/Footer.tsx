@@ -19,14 +19,14 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-[oklch(0.65_0.14_210)] rounded flex items-center justify-center">
-                <span className="text-white font-black text-sm">A</span>
+                <span className="text-white font-black text-sm">D</span>
               </div>
               <span className="text-white font-black text-lg tracking-tight">
-                Apex<span className="text-[oklch(0.65_0.14_210)]">.</span>
+                DBV<span className="text-[oklch(0.65_0.14_210)]">.</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed mb-5">
-              Transforming organizations through expert consulting in IT, Business Development, Project Management, and Continuous Improvement.
+              DBV Mashariki delivers expert consulting in IT, Business Development, Project Management, and Continuous Improvement to transform organizations across Africa and beyond.
             </p>
             <div className="flex gap-3">
               {[Linkedin, Twitter, Globe].map((Icon, i) => (
@@ -92,7 +92,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <span>© {year} Apex Consulting Group. All rights reserved.</span>
+          <span>© {year} DBV Mashariki. All rights reserved.</span>
           <div className="flex gap-5">
             <button className="hover:text-white transition-colors">Privacy Policy</button>
             <button className="hover:text-white transition-colors">Terms of Service</button>

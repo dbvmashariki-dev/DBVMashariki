@@ -43,20 +43,20 @@ export default function AboutSection() {
           >
             <div className="flex items-center gap-3 mb-4">
               <span className="teal-bar" />
-              <span className="label-mono text-[oklch(0.65_0.14_210)]">About Apex</span>
+              <span className="label-mono text-[oklch(0.65_0.14_210)]">About DBV</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6">
               We Don't Just Advise.<br />
               <span className="text-[oklch(0.65_0.14_210)]">We Execute.</span>
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-5">
-              Apex Consulting Group was founded on a simple conviction: that great consulting means rolling up your sleeves and working alongside your clients — not just delivering a report and walking away.
+              DBV Mashariki was founded on a simple conviction: that great consulting means rolling up your sleeves and working alongside your clients — not just delivering a report and walking away.
             </p>
             <p className="text-white/70 leading-relaxed mb-5">
-              With over 15 years of experience across industries including financial services, healthcare, manufacturing, and technology, our consultants bring deep functional expertise and a track record of measurable impact. We combine strategic thinking with operational rigor to help organizations navigate complexity, accelerate growth, and build lasting competitive advantage.
+              With over 15 years of experience across industries including financial services, healthcare, manufacturing, and technology across Africa and beyond, our consultants bring deep functional expertise and a track record of measurable impact. We combine strategic thinking with operational rigor to help organizations navigate complexity, accelerate growth, and build lasting competitive advantage.
             </p>
             <p className="text-white/70 leading-relaxed">
-              Whether you're embarking on a digital transformation, scaling a new business unit, or driving operational efficiency, Apex provides the expertise, tools, and hands-on support to make it happen.
+              Whether you're embarking on a digital transformation, scaling a new business unit, or driving operational efficiency, DBV Mashariki provides the expertise, tools, and hands-on support to make it happen.
             </p>
 
             <div className="mt-8 flex gap-6">

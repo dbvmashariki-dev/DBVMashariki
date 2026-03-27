@@ -49,10 +49,10 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
           >
             <div className="w-8 h-8 bg-[oklch(0.65_0.14_210)] rounded flex items-center justify-center">
-              <span className="text-white font-black text-sm leading-none">A</span>
+              <span className="text-white font-black text-sm leading-none">D</span>
             </div>
             <span className="text-white font-black text-lg tracking-tight">
-              Apex<span className="text-[oklch(0.65_0.14_210)]">.</span>
+              DBV<span className="text-[oklch(0.65_0.14_210)]">.</span>
             </span>
           </button>
 

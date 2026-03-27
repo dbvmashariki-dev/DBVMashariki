@@ -52,14 +52,14 @@ export default function ContactSection() {
               <span className="text-[oklch(0.65_0.14_210)]">Exceptional Together.</span>
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-10">
-              Whether you're facing a specific challenge or exploring how consulting can help your organization grow, we'd love to start a conversation. Our initial consultation is always complimentary.
+              Whether you're facing a specific challenge or exploring how DBV Mashariki can help your organization grow, we'd love to start a conversation. Our initial consultation is always complimentary.
             </p>
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email Us", value: "hello@apexconsulting.com" },
-                { icon: Phone, label: "Call Us", value: "+1 (800) 555-APEX" },
-                { icon: MapPin, label: "Headquarters", value: "New York, NY | Chicago, IL | San Francisco, CA" },
+                { icon: Mail, label: "Email Us", value: "hello@dbvmashariki.com" },
+                { icon: Phone, label: "Call Us", value: "+1 (800) 555-DBV1" },
+                { icon: MapPin, label: "Headquarters", value: "Nairobi, Kenya | Lagos, Nigeria | Johannesburg, South Africa" },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

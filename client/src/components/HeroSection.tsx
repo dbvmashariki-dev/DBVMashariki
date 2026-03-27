@@ -73,7 +73,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.6 }}
           >
-            Transforming organizations through expert consulting in{" "}
+            DBV Mashariki transforms organizations across Africa and beyond through expert consulting in{" "}
             <span className="text-[oklch(0.65_0.14_210)] font-medium">IT</span>,{" "}
             <span className="text-[oklch(0.65_0.14_210)] font-medium">Business Development</span>,{" "}
             <span className="text-[oklch(0.65_0.14_210)] font-medium">Project Management</span>, and{" "}
