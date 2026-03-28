@@ -7,9 +7,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
+import axios from "axios";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -22,14 +24,27 @@ export default function ContactSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       toast.error("Please fill in all required fields.");
       return;
     }
-    setSubmitted(true);
-    toast.success("Message sent! We'll be in touch within 24 hours.");
+
+    setLoading(true);
+    try {
+      await axios.post("/api/contact", form);
+      setSubmitted(true);
+      toast.success("Message sent! We'll be in touch within 24 hours.");
+    } catch (err) {
+      const message =
+        axios.isAxiosError(err) && err.response?.data?.error
+          ? (err.response.data.error as string)
+          : "Something went wrong. Please try again.";
+      toast.error(message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -184,10 +199,11 @@ export default function ContactSection() {
 
                   <button
                     type="submit"
-                    className="w-full btn-sweep bg-[oklch(0.65_0.14_210)] text-white py-3.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[oklch(0.65_0.14_210)]/30 transition-all duration-300"
+                    disabled={loading}
+                    className="w-full btn-sweep bg-[oklch(0.65_0.14_210)] text-white py-3.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[oklch(0.65_0.14_210)]/30 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <span>Send Message</span>
-                    <Send size={15} />
+                    <span>{loading ? "Sending…" : "Send Message"}</span>
+                    {!loading && <Send size={15} />}
                   </button>
 
                   <p className="text-xs text-gray-400 text-center">
